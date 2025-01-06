@@ -1,3 +1,4 @@
+debugpy
 click == 8.1.*
 # FastAPI
 aiohttp == 3.11.2

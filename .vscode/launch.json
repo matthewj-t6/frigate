@@ -2,10 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Launch Frigate",
+      "name": "Python Debugger: Remote Attach",
       "type": "debugpy",
-      "request": "launch",
-      "module": "frigate"
-    }
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
+        }
+      ]
+    },
   ]
 }
